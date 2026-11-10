@@ -1,148 +1,146 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mohamed Ali Lahmer — Cloud, DevOps, DevSecOps and Cybersecurity portfolio.">
-  <meta name="theme-color" content="#f8fafc">
-  <title>Mohamed Ali Lahmer | Cloud & DevOps Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mohamed Ali Lahmer — Cloud & DevOps Engineer: Cloud, DevOps, DevSecOps and cybersecurity portfolio.">
+<meta name="theme-color" content="#070d1c">
+<meta property="og:title" content="Mohamed Ali Lahmer | Cloud & DevOps Engineer">
+<meta property="og:description" content="Cloud, DevOps, DevSecOps and infrastructure automation portfolio.">
+<meta property="og:type" content="website">
+<title>Mohamed Ali Lahmer | Cloud & DevOps Engineer</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%235b8cff'/><text x='50' y='69' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Mohamed Ali Lahmer home"><span class="brand-mark">M</span><span>Mohamed Ali Lahmer<span class="brand-dot">.</span></span></a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-links" id="nav-links">
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#skills" data-i18n="navSkills">Skills</a>
-        <a href="#projects" data-i18n="navProjects">Projects</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">FR</button>
-      </div>
-    </nav>
-  </header>
+<a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+<div class="aurora"></div><div class="progress" id="progress"></div>
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="#home"><span class="mark">M</span><span>Mohamed Ali Lahmer<i>.</i></span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#journey" data-i18n="navJourney">Journey</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </div>
+    <div class="nav-tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle theme">☾</button>
+      <button class="icon-btn" id="lang-toggle" type="button" aria-label="Switch language">FR</button>
+      <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
 
-  <main id="main">
-    <section class="hero section container" id="home">
-      <div class="hero-copy">
-        <div class="availability"><span class="status-dot"></span><span data-i18n="availability">Open to Cloud & DevOps opportunities</span></div>
-        <p class="eyebrow" data-i18n="hello">HELLO, I'M</p>
-        <h1>Mohamed Ali<br><span>Lahmer<span class="accent">.</span></span></h1>
-        <h2 data-i18n="role">Cloud & DevOps Engineer</h2>
-        <p class="hero-description" data-i18n="heroDescription">I build, automate and secure cloud-native environments through DevOps, DevSecOps and cybersecurity practices.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects"><span data-i18n="exploreProjects">Explore my projects</span><span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="assets/cv.pdf" target="_blank" rel="noopener" data-i18n="viewCV">View my CV ↗</a>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
-          <a href="#contact" data-i18n="getInTouch">Get in touch <span>↗</span></a>
-        </div>
+<main id="main">
+<section class="hero container" id="home">
+  <div class="hero-copy">
+    <p class="pill"><span class="dot"></span><span data-i18n="status">Open to Cloud & DevOps opportunities</span></p>
+    <p class="eyebrow" data-i18n="hello">HELLO, I'M</p>
+    <h1>Mohamed Ali<br><em>Lahmer</em></h1>
+    <p class="role"><span id="typed"></span><i class="caret"></i></p>
+    <p class="lead" data-i18n="heroDesc">I build, automate and secure cloud-native environments through DevOps, DevSecOps and cybersecurity practices.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects"><span data-i18n="ctaProjects">Explore my projects</span> ↗</a>
+      <a class="btn" href="assets/cv-en.pdf" data-cv target="_blank" rel="noopener"><span data-i18n="ctaCV">View my CV</span> ↗</a>
+      <a class="btn ghost" href="#contact" data-i18n="ctaContact">Get in touch</a>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <!-- LinkedIn : décommente et remplace l'URL
+      <a href="https://www.linkedin.com/in/TON-PROFIL" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> -->
+      <a href="mailto:medalilahmar00@gmail.com">Email ↗</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="portrait">
+      <div class="orbit"></div>
+      <div class="photo">
+        <b>M</b>
+        <img src="assets/photo.jpg" alt="Portrait of Mohamed Ali Lahmer" width="420" height="420" fetchpriority="high" onerror="this.remove()">
       </div>
-      <div class="hero-visual" aria-label="Cloud and infrastructure illustration">
-        <div class="visual-glow"></div>
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="cloud-card">
-          <div class="cloud-top"><span class="window-dots"><i></i><i></i><i></i></span><span>cloud-infrastructure.yml</span></div>
-          <div class="code-lines">
-            <p><span class="code-purple">apiVersion:</span> <span class="code-green">apps/v1</span></p>
-            <p><span class="code-purple">kind:</span> <span class="code-blue">Deployment</span></p>
-            <p class="indent"><span class="code-purple">metadata:</span></p>
-            <p class="indent-two"><span class="code-purple">name:</span> <span class="code-green">secure-platform</span></p>
-            <p class="indent"><span class="code-purple">spec:</span></p>
-            <p class="indent-two"><span class="code-purple">replicas:</span> <span class="code-orange">3</span></p>
-            <p class="indent-two"><span class="code-purple">automated:</span> <span class="code-blue">true</span></p>
-          </div>
-          <div class="cloud-footer"><span class="status-dot"></span> <span data-i18n="pipelineReady">Pipeline ready</span><span class="footer-check">✓</span></div>
-        </div>
-        <div class="floating-chip chip-cloud"><span>☁</span> Cloud</div>
-        <div class="floating-chip chip-shield"><span>◇</span> Security</div>
-        <div class="floating-chip chip-devops"><span>⌘</span> DevOps</div>
-      </div>
-      <a class="scroll-cue" href="#about"><span></span><span data-i18n="scroll">Scroll to discover</span></a>
-    </section>
+      <span class="badge b1">☁ AWS · Azure</span>
+      <span class="badge b2">◇ DevSecOps</span>
+      <span class="badge b3">⌘ Kubernetes</span>
+    </div>
+  </div>
+</section>
 
-    <section class="section section-soft" id="about">
-      <div class="container about-grid">
-        <div>
-          <p class="eyebrow" data-i18n="aboutEyebrow">A LITTLE ABOUT ME</p>
-          <h2 class="section-title" data-i18n="aboutTitle">Connecting infrastructure,<br>automation & security.</h2>
-        </div>
-        <div class="about-copy">
-          <p data-i18n="aboutText">I am a computer engineering graduate focused on Cloud Computing, DevOps and cybersecurity. I enjoy automating infrastructure, improving delivery pipelines and integrating security throughout the software lifecycle.</p>
-          <p data-i18n="aboutText2">This portfolio showcases selected academic and engineering projects, the tools I work with, and my continuous learning journey.</p>
-          <div class="quick-facts">
-            <div><strong>Cloud</strong><span data-i18n="factCloud">Infrastructure & platforms</span></div>
-            <div><strong>DevSecOps</strong><span data-i18n="factSecurity">Security automation</span></div>
-            <div><strong>CI/CD</strong><span data-i18n="factCICD">Reliable delivery</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="container stats rv">
+  <div><strong data-count="4">0</strong><span data-i18n="s1">Projects</span></div>
+  <div><strong data-count="4">0</strong><span data-i18n="s2">Tech domains</span></div>
+  <div><strong data-count="20" data-suffix="+">0</strong><span data-i18n="s3">Technologies</span></div>
+  <div><strong data-count="4">0</strong><span data-i18n="s4">Cloud platforms</span></div>
+</section>
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
 
-    <section class="section container" id="skills">
-      <div class="section-heading">
-        <div><p class="eyebrow" data-i18n="skillsEyebrow">TOOLS OF THE TRADE</p><h2 class="section-title" data-i18n="skillsTitle">Skills & technologies</h2></div>
-        <p class="section-subtitle" data-i18n="skillsSubtitle">Technologies used across my labs, projects and learning.</p>
+<section class="section container" id="about">
+  <div class="about-grid">
+    <div class="rv"><p class="eyebrow" data-i18n="aboutEyebrow">A LITTLE ABOUT ME</p><h2 data-i18n="aboutTitle">Connecting infrastructure,<br>automation & security.</h2></div>
+    <div class="rv about-copy">
+      <p data-i18n="aboutText">I am a computer engineering graduate focused on Cloud Computing, DevOps and cybersecurity. I enjoy automating infrastructure, improving delivery pipelines and integrating security throughout the software lifecycle.</p>
+      <p data-i18n="aboutText2">This portfolio showcases selected academic and engineering projects, the tools I work with, and my continuous learning journey.</p>
+      <div class="facts">
+        <div><strong>Cloud</strong><span data-i18n="f1">Infrastructure & platforms</span></div>
+        <div><strong>DevSecOps</strong><span data-i18n="f2">Security automation</span></div>
+        <div><strong>CI/CD</strong><span data-i18n="f3">Reliable delivery</span></div>
       </div>
-      <div class="skills-grid">
-        <article class="skill-card"><div class="skill-icon">☁</div><h3>Cloud & Infrastructure</h3><div class="tags"><span>AWS</span><span>Azure</span><span>OpenStack</span><span>CloudStack</span><span>Linux</span></div></article>
-        <article class="skill-card"><div class="skill-icon">⌘</div><h3>DevOps & Automation</h3><div class="tags"><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Ansible</span><span>Jenkins</span><span>GitHub Actions</span></div></article>
-        <article class="skill-card"><div class="skill-icon">◇</div><h3>Security & Monitoring</h3><div class="tags"><span>DevSecOps</span><span>Wazuh</span><span>ELK</span><span>CloudTrail</span><span>Semgrep</span><span>OWASP ZAP</span></div></article>
-        <article class="skill-card"><div class="skill-icon">{ }</div><h3>Development & APIs</h3><div class="tags"><span>Python</span><span>FastAPI</span><span>Java</span><span>Spring</span><span>React</span><span>REST APIs</span></div></article>
-      </div>
-      <p class="small-note" data-i18n="skillsNote">Skills reflect technologies explored in projects and labs; experience levels vary by tool.</p>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section section-soft" id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow" data-i18n="projectsEyebrow">SELECTED WORK</p><h2 class="section-title" data-i18n="projectsTitle">Projects that put ideas to work.</h2></div>
-          <a class="text-link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="allGithub">All projects on GitHub</span> ↗</a>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card project-featured">
-            <div class="project-art art-security"><div class="art-grid"></div><div class="shield-graphic">◇</div><span class="art-label">DEVSECOPS + AI</span><span class="art-code">SCAN → ANALYZE → PROTECT</span></div>
-            <div class="project-body"><div class="project-meta"><span data-i18n="projectPFE">Final-year project</span><span class="project-number">01</span></div><h3>InvisiThreat DevSecOps-IA</h3><p data-i18n="invisiDesc">A DevSecOps platform concept combining automated security scans, centralized findings, risk prioritization and an ML-assisted analysis workflow.</p><div class="tags"><span>GitHub Actions</span><span>Semgrep</span><span>Snyk</span><span>DefectDojo</span><span>Kubernetes</span><span>Python</span></div><a class="project-link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="viewRepository">View repository</span> ↗</a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-art art-cloud"><div class="cloud-shape">☁</div><span class="art-label">AWS SECURITY</span><span class="art-code">LOGS • DETECTION • RESPONSE</span></div>
-            <div class="project-body"><div class="project-meta"><span data-i18n="projectCloud">Cloud security project</span><span class="project-number">02</span></div><h3>CloudGuard SIEM on AWS</h3><p data-i18n="cloudDesc">A cloud security lab integrating AWS CloudTrail logs with S3 and a Wazuh-based SIEM for monitoring and threat visibility.</p><div class="tags"><span>AWS EC2</span><span>CloudTrail</span><span>S3</span><span>Wazuh</span></div><a class="project-link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="viewRepository">View repository</span> ↗</a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-art art-cloudstack"><div class="server-stack"><i></i><i></i><i></i></div><span class="art-label">PRIVATE CLOUD</span><span class="art-code">COMPUTE • NETWORK • STORAGE</span></div>
-            <div class="project-body"><div class="project-meta"><span data-i18n="projectInfra">Infrastructure lab</span><span class="project-number">03</span></div><h3>Private Cloud — OpenStack</h3><p data-i18n="rifDesc">A private-cloud project focused on high availability, Kubernetes, Docker, Ansible-based infrastructure as code, and Prometheus/Grafana monitoring.</p><div class="tags"><span>OpenStack</span><span>Kubernetes</span><span>Ansible</span><span>Prometheus</span></div><a class="project-link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="viewRepository">View repository</span> ↗</a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-art art-automation"><div class="pipeline"><i></i><b></b><i></i><b></b><i></i></div><span class="art-label">AUTOMATION</span><span class="art-code">BUILD • CONFIGURE • DELIVER</span></div>
-            <div class="project-body"><div class="project-meta"><span data-i18n="projectInternship">Internship project</span><span class="project-number">04</span></div><h3>DevOps Automation</h3><p data-i18n="automationDesc">Automation work involving Python, XML, desktop tooling and container/configuration workflows using Docker and Ansible.</p><div class="tags"><span>Python</span><span>Docker</span><span>Ansible</span><span>XML</span></div><a class="project-link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="viewProfile">View GitHub profile</span> ↗</a></div>
-          </article>
-        </div>
-        <p class="small-note" data-i18n="repoNote">Project links currently lead to my GitHub profile. Replace each link with its exact repository URL before publishing.</p>
-      </div>
-    </section>
+<section class="section container" id="skills">
+  <div class="heading rv"><div><p class="eyebrow" data-i18n="skillsEyebrow">TOOLS OF THE TRADE</p><h2 data-i18n="skillsTitle">Skills & technologies</h2></div><p class="sub" data-i18n="skillsSub">Technologies used across my labs, projects and learning.</p></div>
+  <div class="grid g4">
+    <article class="card rv"><div class="ico">☁</div><h3>Cloud & Infrastructure</h3><div class="tags"><span>AWS</span><span>Azure</span><span>OpenStack</span><span>CloudStack</span><span>Linux</span></div></article>
+    <article class="card rv"><div class="ico">⌘</div><h3>DevOps & Automation</h3><div class="tags"><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Ansible</span><span>Jenkins</span><span>GitHub Actions</span></div></article>
+    <article class="card rv"><div class="ico">◇</div><h3>Security & Monitoring</h3><div class="tags"><span>DevSecOps</span><span>Wazuh</span><span>ELK</span><span>CloudTrail</span><span>Semgrep</span><span>OWASP ZAP</span></div></article>
+    <article class="card rv"><div class="ico">{ }</div><h3>Development & APIs</h3><div class="tags"><span>Python</span><span>FastAPI</span><span>Java</span><span>Spring</span><span>React</span><span>REST APIs</span></div></article>
+  </div>
+  <p class="note" data-i18n="skillsNote">Skills reflect technologies explored in projects and labs; experience levels vary by tool.</p>
+</section>
 
-    <section class="section container" id="journey">
-      <div class="section-heading"><div><p class="eyebrow" data-i18n="journeyEyebrow">BACKGROUND</p><h2 class="section-title" data-i18n="journeyTitle">Education & learning</h2></div></div>
-      <div class="timeline">
-        <div class="timeline-item"><span class="timeline-dot"></span><div><span class="timeline-date" data-i18n="graduateDate">Engineering degree</span><h3 data-i18n="degreeTitle">Computer Engineering — ESPRIT</h3><p data-i18n="degreeDesc">Focus: Software Development, Cloud Computing, Cybersecurity and DevOps.</p></div></div>
-        <div class="timeline-item"><span class="timeline-dot"></span><div><span class="timeline-date">AWS Academy</span><h3 data-i18n="awsTitle">Cloud Foundations & Operations</h3><p data-i18n="awsDesc">Training in cloud fundamentals, cloud security foundations and cloud operations.</p></div></div>
-      </div>
-    </section>
+<section class="section container" id="projects">
+  <div class="heading rv"><div><p class="eyebrow" data-i18n="projEyebrow">SELECTED WORK</p><h2 data-i18n="projTitle">Projects that put ideas to work.</h2></div><a class="link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="allGh">All projects on GitHub</span> ↗</a></div>
+  <div class="grid g2">
+    <article class="card project rv"><div class="pv" style="--h:222"><span>◇</span></div><div class="meta"><span data-i18n="p1c">Final-year project</span><b>01</b></div><h3>InvisiThreat DevSecOps-IA</h3><p data-i18n="p1">A DevSecOps platform concept combining automated security scans, centralized findings, risk prioritization and an ML-assisted analysis workflow.</p><div class="tags"><span>GitHub Actions</span><span>Semgrep</span><span>Snyk</span><span>DefectDojo</span><span>Kubernetes</span><span>Python</span></div><a class="link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="repo">View repository</span> ↗</a></article>
+    <article class="card project rv"><div class="pv" style="--h:172"><span>☁</span></div><div class="meta"><span data-i18n="p2c">Cloud security project</span><b>02</b></div><h3>CloudGuard SIEM on AWS</h3><p data-i18n="p2">A cloud security lab integrating AWS CloudTrail logs with S3 and a Wazuh-based SIEM for monitoring and threat visibility.</p><div class="tags"><span>AWS EC2</span><span>CloudTrail</span><span>S3</span><span>Wazuh</span></div><a class="link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="repo">View repository</span> ↗</a></article>
+    <article class="card project rv"><div class="pv" style="--h:262"><span>▤</span></div><div class="meta"><span data-i18n="p3c">Infrastructure lab</span><b>03</b></div><h3>Private Cloud — OpenStack</h3><p data-i18n="p3">A private-cloud project focused on high availability, Kubernetes, Docker, Ansible-based infrastructure as code, and Prometheus/Grafana monitoring.</p><div class="tags"><span>OpenStack</span><span>Kubernetes</span><span>Ansible</span><span>Prometheus</span></div><a class="link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="repo">View repository</span> ↗</a></article>
+    <article class="card project rv"><div class="pv" style="--h:24"><span>⌘</span></div><div class="meta"><span data-i18n="p4c">Internship project</span><b>04</b></div><h3>DevOps Automation</h3><p data-i18n="p4">Automation work involving Python, XML, desktop tooling and container/configuration workflows using Docker and Ansible.</p><div class="tags"><span>Python</span><span>Docker</span><span>Ansible</span><span>XML</span></div><a class="link" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer"><span data-i18n="viewProfile">View GitHub profile</span> ↗</a></article>
+  </div>
+  <p class="note" data-i18n="repoNote">Project links currently lead to my GitHub profile. Replace each link with its exact repository URL before publishing.</p>
+</section>
 
-    <section class="section contact-section" id="contact">
-      <div class="container contact-box">
-        <div><p class="eyebrow" data-i18n="contactEyebrow">LET'S CONNECT</p><h2 class="section-title" data-i18n="contactTitle">Building something reliable?</h2><p data-i18n="contactDesc">I’m interested in opportunities around Cloud, DevOps, DevSecOps and infrastructure automation.</p></div>
-        <div class="contact-actions"><a class="button button-primary" href="mailto:medalilahmar00@gmail.com" data-i18n="emailMe">Email me ↗</a><a class="button button-secondary" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="button button-secondary" href="assets/cv.pdf" target="_blank" rel="noopener" data-i18n="downloadCV">Download CV ↓</a><p class="contact-hint">medalilahmar00@gmail.com · <a href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer">GitHub</a></p></div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">M</span><span>Mohamed Ali Lahmer<span class="brand-dot">.</span></span></a><p>© <span id="year"></span> Mohamed Ali Lahmer. <span data-i18n="rights">Built with care.</span></p><a href="#home" class="back-top" aria-label="Back to top">↑</a></div></footer>
-  <script src="script.js"></script>
+<section class="section container" id="journey">
+  <div class="heading rv"><div><p class="eyebrow" data-i18n="jEyebrow">BACKGROUND</p><h2 data-i18n="jTitle">Education & learning</h2></div></div>
+  <ol class="timeline">
+    <li class="rv"><span class="tl-dot"></span><small data-i18n="e1d">Engineering degree</small><h3 data-i18n="e1t">Computer Engineering — ESPRIT</h3><p data-i18n="e1p">Focus: Software Development, Cloud Computing, Cybersecurity and DevOps.</p></li>
+    <li class="rv"><span class="tl-dot"></span><small>AWS Academy</small><h3 data-i18n="e2t">Cloud Foundations & Operations</h3><p data-i18n="e2p">Training in cloud fundamentals, cloud security foundations and cloud operations.</p></li>
+  </ol>
+</section>
+
+<section class="section container" id="contact">
+  <div class="contact rv">
+    <p class="eyebrow" data-i18n="cEyebrow">LET'S CONNECT</p>
+    <h2 data-i18n="cTitle">Building something reliable?</h2>
+    <p class="csub" data-i18n="cText">I’m interested in opportunities around Cloud, DevOps, DevSecOps and infrastructure automation.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:medalilahmar00@gmail.com"><span data-i18n="mail">Email me</span> ↗</a>
+      <button class="btn" id="copy-mail" type="button" data-i18n="copy">Copy email</button>
+      <a class="btn" href="assets/cv-en.pdf" data-cv target="_blank" rel="noopener"><span data-i18n="dl">Download CV</span> ↓</a>
+      <a class="btn ghost" href="https://github.com/medalilahmar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div>
+    <p class="addr">medalilahmar00@gmail.com</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer container"><a class="brand" href="#home"><span class="mark">M</span><span>Mohamed Ali Lahmer<i>.</i></span></a><p>© <span id="year"></span> Mohamed Ali Lahmer. <span data-i18n="rights">Built with care.</span></p><a class="icon-btn" href="#home" aria-label="Back to top">↑</a></footer>
+<script src="script.js"></script>
 </body>
 </html>
